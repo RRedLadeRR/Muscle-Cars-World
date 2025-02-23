@@ -1,0 +1,493 @@
+body {
+    overflow: hidden;
+    overflow-y: scroll;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    color: white;
+    /* background: linear-gradient(to bottom left, black, darkred); */
+    background-image: url(./images/dodge-challenger-legacy-wi.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    /* carbon background */
+/*  background:
+    linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+    linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+    linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+    linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+    linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+    linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+    background-color: #131313;
+    background-size: 20px 20px; */
+    animation: fade-in 1s forwards;
+    backdrop-filter: blur(5px);
+    scroll-behavior: smooth;
+    text-shadow: 2px 2px 2px white;
+}
+
+@keyframes fade-in {
+    100% {
+        opacity: 1;
+    }
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body p, h1, h3, ul{
+    margin: 75px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+body h4 {
+    margin: 50px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    color: black;
+    margin: 40px;
+}
+
+header {
+    background-color: darkred;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin: 10px 0 0;
+    font-size: 18px;
+}
+
+.logo img{
+    height: 30px;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    background: darkred;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover {
+    /* color: red; */
+    background: red;
+}
+
+h2 {
+    margin: 50px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+b {
+    font-weight: 1000;
+}
+
+pre {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.text {
+    font-size: 16px;
+    line-height: 1.5;
+    overflow-wrap: break-word;
+    white-space: normal;
+}
+
+.container {
+    width: 800px;
+    height: 150px;
+    margin: 70px auto;
+    color: black;
+    border-radius: 8px;
+    border: 8px solid black;
+    max-width: 800px;
+    max-height: 200px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container p {
+    margin-top: 0;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.container h1 {
+    margin-top: 0;
+    font-weight: bolder;
+}
+
+.btn {
+    display: inline-block;
+    background: darkred;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: red;
+}
+
+.car-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.car-card {
+    background-color: black;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+
+.car-card:hover {
+    transform: scale(1.05);
+}
+
+.car-card img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.car-card h2 {
+    font-size: 1.5em;
+    margin: 15px 0 10px;
+    color: darkred;
+}
+
+.car-card p {
+    font-size: 1em;
+    color: maroon;
+}
+
+.car-text {
+    color: darkred;
+    font-weight: bolder;
+    font-size: 25px;
+    text-shadow: 2px 2px 2px black;
+    /* background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 5px; */
+}
+
+.car-text h3 {
+    margin-top: 6%;
+    margin-left: 3%;
+}
+
+.car-text h4 {
+    margin-left: 6%;
+}
+
+.car-text h5 {
+    margin-left: 10%;
+}
+
+.car-text h6 {
+    margin-left: 14%;
+}
+
+.car-card-solo {
+    background-color: black;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    width: 960px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    color: darkred;
+}
+
+.car-card-solo:hover {
+    transform: scale(1.05);
+}
+
+.car-card-solo img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.car-card-solo h2 {
+    font-size: 1.5em;
+    margin: 15px 0 10px;
+    color: darkred;
+}
+
+.car-card-solo p {
+    font-size: 1em;
+    color: maroon;
+}
+
+
+.gallery {
+    padding: 20px;
+    text-align: center;
+}
+
+.gallery h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.gallery-grid {
+    display: grid;
+    margin: 50px;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.home-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: darkred;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: grid;
+    place-items: center;
+    margin: 0 auto;
+}
+
+.home-button:hover {
+    background-color: brown;
+}
+
+footer {
+    background-color: darkred;
+    color: black;
+    font-size: 15px;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.auth-container {
+    display: flex;
+    gap: 30px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 150px auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.auth-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: stretch;
+    width: 600px;
+    height: 400px;
+    padding: 20px;
+    border: 1px solid darkred;
+    border-radius: 10px;
+    background: black;
+}
+
+.auth-box h2 {
+    margin: 35px;
+    color: darkred;
+}
+
+.auth-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-box input {
+    padding: 10px;
+    margin: 10px 0;
+    border: 3px solid darkred;
+    border-radius: 5px;
+    color: darkred;
+    background: black;
+}
+
+.auth-box input::placeholder {
+    color: darkred;
+}
+
+.auth-box button {
+    padding: 10px;
+    margin: 10px 0;
+    font-weight: bolder;
+    background: darkred;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.auth-box button:hover {
+    background: red;
+}
+
+.auth-box p {
+    margin: 10px;
+    color: darkred;
+}
+
+.auth-box p a {
+    color: black;
+    background: darkred;
+    text-decoration: none;
+    margin: 30px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.auth-box p a:hover {
+    text-decoration: none;
+    background: red;
+}
+
+.auth-box a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .auth-container {
+        flex-direction: column;
+    }
+}
+@media (max-width: 1200px) {
+    .car-card {
+        width: 45%;
+    }
+
+    .auth-box {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .car-card {
+        width: 80%;
+    }
+
+    .car-card-solo {
+        width: 90%;
+    }
+
+    .auth-box {
+        width: 90%;
+    }
+
+    .container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+        padding: 5px;
+    }
+
+    .home-button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    .car-card {
+        width: 100%;
+    }
+
+    .car-card-solo {
+        width: 100%;
+    }
+
+    .auth-box {
+        width: 100%;
+    }
+
+    .container {
+        width: 100%;
+        padding: 20px;
+    }
+}

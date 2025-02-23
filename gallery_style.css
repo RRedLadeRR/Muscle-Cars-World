@@ -1,0 +1,192 @@
+/* Стилі для базової структури */
+body {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    color: white;
+    /* background: linear-gradient(to bottom left, black, darkred); */
+    background-image: url(images/dodge-challenger-legacy-wi.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    /* carbon background */
+/*  background:
+    linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+    linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+    linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+    linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+    linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+    linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+    background-color: #131313;
+    background-size: 20px 20px; */
+}
+
+body p, h3, ul{
+    margin: 75px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+body h4 {
+    margin: 50px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+header {
+    background-color: darkred;
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin: 10px 0 0;
+    font-size: 18px;
+}
+
+h2 {
+    margin: 50px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+b {
+    font-weight: 1000;
+}
+
+pre {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.text {
+    font-size: 16px;
+    line-height: 1.5;
+    overflow-wrap: break-word;
+    white-space: normal;
+}
+
+/* .text {
+    font-family: 'Courier New', Courier, monospace;
+} */
+/* Стилі для карток автомобілів */
+.car-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.car-card {
+    background-color: black;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+
+.car-card:hover {
+    transform: scale(1.05);
+}
+
+.car-card img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.car-card h2 {
+    font-size: 1.5em;
+    margin: 15px 0 10px;
+    color: darkred;
+}
+
+.car-card p {
+    font-size: 1em;
+    color: darkred;
+}
+
+/* Галерея */
+.gallery {
+    padding: 20px;
+    text-align: center;
+}
+
+.gallery h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.gallery-grid {
+    display: grid;
+    margin: 50px;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.home-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: black;
+    font-weight: bolder;
+    background-color: darkred;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+    display: grid;
+    place-items: center;
+    margin: 10px auto;
+}
+
+.home-button:hover {
+    background-color: red;
+}
+
+footer {
+    background-color: darkred;
+    color: black;
+    font-size: 15px;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
