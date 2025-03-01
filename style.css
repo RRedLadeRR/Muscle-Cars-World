@@ -26,6 +26,26 @@ body {
     animation: fade-in 1s forwards;
     backdrop-filter: blur(5px);
     scroll-behavior: smooth;
+    text-shadow: 0px 0px 5px gray;
+    /* text-shadow: 
+    -1px -1px 0 white,
+     1px -1px 0 white,
+    -1px  1px 0 white,
+     1px  1px 0 white; */
+}
+
+:root {
+    --primary-color: darkred;
+    --secondary-color: black;
+    --text-color: white;
+    /* #c70000 */
+    /* rgb(241, 70, 70) */
+    /* #C86400 */
+    /* #ff4136 */
+    /* #ff6347 */
+    /* #e74c3c */
+    /* #c0392b */
+    /* #ff6f61 */
 }
 
 @keyframes fade-in {
@@ -58,7 +78,7 @@ h1 {
 }
 
 header {
-    background-color: darkred;
+    background-color: var(--primary-color);
     color: white;
     text-align: center;
     padding: 20px 0;
@@ -90,7 +110,7 @@ nav ul li {
 }
 
 nav ul li a {
-    background: darkred;
+    background: var(--primary-color);
     padding: 5px 10px;
     border-radius: 5px;
     text-decoration: none;
@@ -100,8 +120,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    /* color: red; */
-    background: red;
+    /* color: var(--text-color); */
+    background: maroon;
 }
 
 h2 {
@@ -155,16 +175,17 @@ pre {
 
 .btn {
     display: inline-block;
-    background: darkred;
+    background: var(--primary-color);
     color: black;
     padding: 10px 20px;
     text-decoration: none;
     margin-top: 10px;
     border-radius: 5px;
+    transition: 0.3s;
 }
 
 .btn:hover {
-    background: red;
+    background: maroon;
 }
 
 .car-container {
@@ -172,10 +193,12 @@ pre {
     justify-content: center;
     flex-wrap: wrap;
     margin: 20px;
+    text-shadow: none;
 }
 
 .car-card {
     background-color: black;
+    border: 2px solid var(--primary-color);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 15px;
@@ -198,18 +221,18 @@ pre {
 }
 
 .car-card h2 {
-    font-size: 1.5em;
+    font-size: 2em;
     margin: 15px 0 10px;
-    color: darkred;
+    color: var(--text-color);
 }
 
 .car-card p {
     font-size: 1em;
-    color: maroon;
+    color: var(--text-color);
 }
 
 .car-text {
-    color: darkred;
+    color: var(--text-color);
     font-weight: bolder;
     font-size: 25px;
     text-shadow: 2px 2px 2px black;
@@ -236,6 +259,7 @@ pre {
 
 .car-card-solo {
     background-color: black;
+    border: 2px solid var(--primary-color);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 15px;
@@ -246,7 +270,7 @@ pre {
     text-decoration: none;
     color: inherit;
     display: inline-block;
-    color: darkred;
+    color: var(--text-color);
 }
 
 .car-card-solo:hover {
@@ -261,12 +285,12 @@ pre {
 .car-card-solo h2 {
     font-size: 1.5em;
     margin: 15px 0 10px;
-    color: darkred;
+    color: var(--text-color);
 }
 
 .car-card-solo p {
     font-size: 1em;
-    color: maroon;
+    color: var(--text-color);
 }
 
 
@@ -305,7 +329,7 @@ pre {
     padding: 10px 20px;
     font-size: 16px;
     color: white;
-    background-color: darkred;
+    background-color: var(--primary-color);
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -316,11 +340,11 @@ pre {
 }
 
 .home-button:hover {
-    background-color: brown;
+    background-color: maroon;
 }
 
 footer {
-    background-color: darkred;
+    background-color: var(--primary-color);
     color: black;
     font-size: 15px;
     text-align: center;
@@ -342,6 +366,7 @@ footer p {
     margin: 150px auto;
     align-items: center;
     justify-content: center;
+    text-shadow: none;
 }
 
 .auth-box {
@@ -352,14 +377,14 @@ footer p {
     width: 600px;
     height: 400px;
     padding: 20px;
-    border: 1px solid darkred;
+    border: 1px solid var(--text-color);
     border-radius: 10px;
     background: black;
 }
 
 .auth-box h2 {
     margin: 35px;
-    color: darkred;
+    color: var(--text-color);
 }
 
 .auth-box form {
@@ -370,21 +395,21 @@ footer p {
 .auth-box input {
     padding: 10px;
     margin: 10px 0;
-    border: 3px solid darkred;
+    border: 3px solid var(--text-color);
     border-radius: 5px;
-    color: darkred;
+    color: var(--text-color);
     background: black;
 }
 
 .auth-box input::placeholder {
-    color: darkred;
+    color: var(--text-color);
 }
 
 .auth-box button {
     padding: 10px;
     margin: 10px 0;
     font-weight: bolder;
-    background: darkred;
+    background: var(--text-color);
     color: black;
     border: none;
     border-radius: 5px;
@@ -393,17 +418,17 @@ footer p {
 }
 
 .auth-box button:hover {
-    background: red;
+    background: var(--text-color);
 }
 
 .auth-box p {
     margin: 10px;
-    color: darkred;
+    color: var(--text-color);
 }
 
 .auth-box p a {
     color: black;
-    background: darkred;
+    background: var(--text-color);
     text-decoration: none;
     margin: 30px;
     padding: 10px;
@@ -413,7 +438,7 @@ footer p {
 
 .auth-box p a:hover {
     text-decoration: none;
-    background: red;
+    background: var(--text-color);
 }
 
 .auth-box a:hover {
@@ -421,72 +446,178 @@ footer p {
 }
 
 @media (max-width: 768px) {
-    .auth-container {
-        flex-direction: column;
-    }
-}
-@media (max-width: 1200px) {
-    .car-card {
-        width: 45%;
+    body {
+        max-width: 100%;
+        /* padding: 10px; */
     }
 
-    .auth-box {
-        width: 80%;
+    .header {
+        width: 85%;
     }
-}
 
-@media (max-width: 768px) {
     nav ul {
         flex-direction: column;
         align-items: center;
     }
 
-    .car-card {
-        width: 80%;
+    nav ul li {
+        margin: 10px 0;
     }
 
-    .car-card-solo {
+    .container, .auth-box, .car-card, .car-card-solo {
         width: 90%;
-    }
-
-    .auth-box {
-        width: 90%;
+        margin: 20px auto;
+        padding: 15px;
     }
 
     .container {
-        width: 90%;
+        width: 100%;
+        color: black;
+        border-radius: 8px;
+        border: 8px solid black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .container p {
+        margin: 0;
+        font-weight: bolder;
+        font-size: 15px;
+    }
+    
+    .container h1 {
+        margin: 0;
+        font-weight: bolder;
+        font-size: 25px;
+    }
+    
+    .car-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+    }
+
+    h1, h2, h3, h4 {
+        font-size: 1.5em;
+    }
+
+    footer {
+        width: 110%;
     }
 }
 
 @media (max-width: 480px) {
+    body {
+        max-width: 85%;
+        /* padding: 5px; */
+    }
+
+    header {
+        /* padding: 10px 0; */
+        width: 110%;
+    }
+
     h1 {
-        font-size: 24px;
+        font-size: 22px;
+        margin: 20px 0;
+    }
+
+    nav ul {
+        flex-direction: column;
     }
 
     nav ul li a {
-        font-size: 16px;
-        padding: 5px;
-    }
-
-    .home-button {
         font-size: 14px;
-        padding: 8px 15px;
+        padding: 5px;
+        display: block;
+        text-align: center;
     }
 
-    .car-card {
-        width: 100%;
-    }
-
-    .car-card-solo {
-        width: 100%;
-    }
-
-    .auth-box {
-        width: 100%;
+    .container, .auth-box, .car-card, .car-card-solo {
+        padding: 10px;
+        margin: 10px auto;
     }
 
     .container {
         width: 100%;
-        padding: 20px;
+        color: black;
+        border-radius: 8px;
+        border: 8px solid black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .container p {
+        margin: 0;
+        font-weight: bolder;
+        font-size: 10px;
+    }
+    
+    .container h1 {
+        margin: 0;
+        font-weight: bolder;
+        font-size: 15px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .home-button {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    footer {
+        font-size: 0.8em;
+        width: 110%;
     }
 }
+
+
+
+.intro-video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    animation: fadeOut 5s 3s forwards;
+}
+
+.intro-video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main-content {
+    opacity: 0;
+    animation: fadeIn 1s 7s forwards;
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+} 
