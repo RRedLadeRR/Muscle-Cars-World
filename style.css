@@ -121,7 +121,7 @@ nav ul li a {
 
 nav ul li a:hover {
     /* color: var(--text-color); */
-    background: maroon;
+    background: red;
 }
 
 h2 {
@@ -185,7 +185,7 @@ pre {
 }
 
 .btn:hover {
-    background: maroon;
+    background: red;
 }
 
 .car-container {
