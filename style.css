@@ -377,14 +377,22 @@ footer p {
     width: 600px;
     height: 400px;
     padding: 20px;
-    border: 1px solid var(--text-color);
+    border: 1px solid var(--primary-color);
     border-radius: 10px;
     background: black;
 }
 
+.auth-box input:valid {
+    border-color: green;
+}
+
+.auth-box input:invalid {
+    border-color: red;
+}
+
 .auth-box h2 {
     margin: 35px;
-    color: var(--text-color);
+    color: var(--primary-color);
 }
 
 .auth-box form {
@@ -395,21 +403,21 @@ footer p {
 .auth-box input {
     padding: 10px;
     margin: 10px 0;
-    border: 3px solid var(--text-color);
+    border: 3px solid var(--primary-color);
     border-radius: 5px;
-    color: var(--text-color);
+    color: var(--primary-color);
     background: black;
 }
 
 .auth-box input::placeholder {
-    color: var(--text-color);
+    color: var(--primary-color);
 }
 
 .auth-box button {
     padding: 10px;
     margin: 10px 0;
     font-weight: bolder;
-    background: var(--text-color);
+    background: var(--primary-color);
     color: black;
     border: none;
     border-radius: 5px;
@@ -418,17 +426,17 @@ footer p {
 }
 
 .auth-box button:hover {
-    background: var(--text-color);
+    background: red
 }
 
 .auth-box p {
     margin: 10px;
-    color: var(--text-color);
+    color: var(--primary-color);
 }
 
 .auth-box p a {
     color: black;
-    background: var(--text-color);
+    background: var(--primary-color);
     text-decoration: none;
     margin: 30px;
     padding: 10px;
@@ -438,7 +446,7 @@ footer p {
 
 .auth-box p a:hover {
     text-decoration: none;
-    background: var(--text-color);
+    background: red;
 }
 
 .auth-box a:hover {
